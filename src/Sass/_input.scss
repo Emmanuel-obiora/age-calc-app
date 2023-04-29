@@ -1,0 +1,60 @@
+.user-input{
+    display: grid;
+    grid-template-columns: repeat(3, 95px);
+    gap: .8rem;
+    height: 5.5rem;
+    border-bottom: 1px solid $Off-white;
+
+    @media(max-width: 37.5rem){
+        grid-template-columns: repeat(3, 75px);
+    }
+
+    &_field{
+        color: $Smokey-grey;
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+
+        &-label{
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        & input{
+            display: flex;
+            height: 2.5rem;
+            border: 1px solid $Off-white;
+            padding: .5rem;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        & > p{
+            display: none;
+            font-size: 8px;
+            color: $Light-red;
+
+            @media(max-width: 37.5rem){
+                font-size: 7px;
+            }
+        }
+    }
+}
+
+.section-error {
+
+    & label{
+        color: $Light-red;
+    }
+
+    & input {
+        border: 1px solid $Light-red;
+    }
+
+    & p{
+        display: block;
+    }
+    
+}

@@ -1,0 +1,20 @@
+.age-display{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 1rem;
+
+    &_each{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        height: 3.1rem;
+
+        & > span{
+            color: $Purple;
+            letter-spacing: 5px;
+        }
+    }
+}

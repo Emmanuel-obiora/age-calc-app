@@ -1,14 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: hsl(0, 0%, 86%);
+}
+
+.app {
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  padding: 1.5rem;
+  margin: auto;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 28% 10px;
+  width: 450px;
+  height: 350px;
+  position: relative;
+}
+@media (max-width: 37.5rem) {
+  main {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+.mode-toggle {
+  position: absolute;
+  background: hsl(259, 100%, 65%);
+  padding: 0.5rem;
+  max-width: 12%;
+  border-radius: 50%;
+  right: 1.5rem;
+  top: 5.4rem;
+  color: hsl(0, 0%, 94%);
+  cursor: pointer;
+}
+@media (max-width: 37.5rem) {
+  .mode-toggle {
+    right: 45%;
+    top: 5.8rem;
+  }
+}
+
+.user-input {
+  display: grid;
+  grid-template-columns: repeat(3, 95px);
+  gap: 0.8rem;
+  height: 5.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 94%);
+}
+@media (max-width: 37.5rem) {
+  .user-input {
+    grid-template-columns: repeat(3, 75px);
+  }
+}
+.user-input_field {
+  color: hsl(0, 1%, 44%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.user-input_field-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.user-input_field input {
+  display: flex;
+  height: 2.5rem;
+  border: 1px solid hsl(0, 0%, 94%);
+  padding: 0.5rem;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.user-input_field > p {
+  display: none;
+  font-size: 8px;
+  color: hsl(0, 100%, 67%);
+}
+@media (max-width: 37.5rem) {
+  .user-input_field > p {
+    font-size: 7px;
+  }
+}
+
+.section-error label {
+  color: hsl(0, 100%, 67%);
+}
+.section-error input {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.section-error p {
+  display: block;
+}
+
+.age-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+.age-display_each {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3.1rem;
+}
+.age-display_each > span {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 5px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: auto;
+  color: hsl(259, 100%, 65%);
 }
 .attribution > a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 8%);
 }/*# sourceMappingURL=styles.css.map */
