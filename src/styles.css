@@ -69,7 +69,7 @@ main {
 }
 @media (max-width: 12.5rem) {
   .user-input {
-    grid-template-columns: repeat(3, 55px);
+    grid-template-columns: repeat(3, 65px);
   }
 }
 .user-input_field {
