@@ -67,6 +67,11 @@ main {
     grid-template-columns: repeat(3, 75px);
   }
 }
+@media (max-width: 12.5rem) {
+  .user-input {
+    grid-template-columns: repeat(3, 55px);
+  }
+}
 .user-input_field {
   color: hsl(0, 1%, 44%);
   display: flex;
