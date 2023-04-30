@@ -47,7 +47,7 @@ main {
 }
 @media (max-width: 37.5rem) {
   .mode-toggle {
-    right: 45%;
+    right: 40%;
     top: 5.8rem;
   }
 }
@@ -140,12 +140,26 @@ main {
 .header {
   display: block;
   text-align: center;
+  margin: auto;
 }
 .header > h1 {
   text-transform: uppercase;
   color: hsl(259, 100%, 65%);
 }
+@media (max-width: 37.5rem) {
+  .header > h1 {
+    font-size: 22px;
+  }
+}
 .header > p {
   font-size: 15px;
   color: hsl(0, 1%, 44%);
+  margin: auto;
+}
+@media (max-width: 37.5rem) {
+  .header > p {
+    font-size: 12px;
+    width: 12rem;
+    line-height: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

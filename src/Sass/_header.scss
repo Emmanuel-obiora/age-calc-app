@@ -1,14 +1,26 @@
 .header{
     display: block;
     text-align: center;
+    margin: auto;
 
     & > h1{
         text-transform: uppercase;
         color: $Purple;
+
+        @media(max-width: 37.5rem){
+            font-size: 22px;
+        }
     }
 
     & > p{
         font-size: 15px;
         color: $Smokey-grey;
+        margin: auto;
+
+        @media(max-width: 37.5rem){
+            font-size: 12px;
+            width: 12rem;
+            line-height: 1;
+        }
     }
 }
