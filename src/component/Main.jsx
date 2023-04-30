@@ -41,7 +41,7 @@ const Main = () => {
           document.getElementById('dispYear').innerHTML = presentYear;
           return;
       } else{
-        if(age.day < currentDay){
+        if(age.day <= currentDay){
           const presentYear = currentYear-age.year;
           document.getElementById('dispYear').innerHTML = presentYear;
           return;

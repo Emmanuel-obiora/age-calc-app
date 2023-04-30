@@ -51,6 +51,9 @@ main {
     top: 5.8rem;
   }
 }
+.mode-toggle:hover {
+  background: hsl(0, 0%, 8%);
+}
 
 .user-input {
   display: grid;
