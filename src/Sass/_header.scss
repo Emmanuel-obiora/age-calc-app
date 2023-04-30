@@ -1,0 +1,14 @@
+.header{
+    display: block;
+    text-align: center;
+
+    & > h1{
+        text-transform: uppercase;
+        color: $Purple;
+    }
+
+    & > p{
+        font-size: 15px;
+        color: $Smokey-grey;
+    }
+}

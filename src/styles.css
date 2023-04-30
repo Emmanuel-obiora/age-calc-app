@@ -135,4 +135,17 @@ main {
 }
 .attribution > a {
   color: hsl(0, 0%, 8%);
+}
+
+.header {
+  display: block;
+  text-align: center;
+}
+.header > h1 {
+  text-transform: uppercase;
+  color: hsl(259, 100%, 65%);
+}
+.header > p {
+  font-size: 15px;
+  color: hsl(0, 1%, 44%);
 }/*# sourceMappingURL=styles.css.map */
