@@ -9,6 +9,10 @@
         grid-template-columns: repeat(3, 75px);
     }
 
+    @media(max-width: 21.5rem){
+        grid-template-columns: repeat(3, 55px);
+    }
+
     &_field{
         color: $Smokey-grey;
         display: flex;
