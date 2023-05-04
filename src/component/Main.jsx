@@ -62,11 +62,19 @@ const Main = () => {
   // function to calculate the number of months a person has lived
   function handleNewMonth(){
     if(currentMonth < age.month){
-      const newMonth =12 + currentMonth;
+      if(currentDay < age.day){
+        const newMonth =11 + currentMonth;
 
-      const presentMonth = newMonth - age.month;
-      document.getElementById('dispMonth').innerHTML = presentMonth;
-      return;
+        const presentMonth = newMonth - age.month;
+        document.getElementById('dispMonth').innerHTML = presentMonth;
+        return;
+      } else {
+        const newMonth =12 + currentMonth;
+
+        const presentMonth = newMonth - age.month;
+        document.getElementById('dispMonth').innerHTML = presentMonth;
+        return;
+      }
     } else if(currentMonth > age.month){
       const presentMonth = currentMonth - age.month;
       document.getElementById('dispMonth').innerHTML = presentMonth;
@@ -91,10 +99,29 @@ const Main = () => {
       document.getElementById('dispDay').innerHTML = presentDay;
       return;
     } else{
-      const presentDay = age.day - currentDay;
+      if(currentMonth == 12 || currentMonth == 10 || currentMonth == 7 || currentMonth == 5){
+        const preM = 30-age.day;
+        const preD = currentDay-0;
 
-      document.getElementById('dispDay').innerHTML = presentDay;
-      return;
+        const presentDay = preM + preD;
+        document.getElementById('dispDay').innerHTML = presentDay;
+        return;
+      } else if(currentMonth == 11 || currentMonth == 9 || currentMonth == 8 || currentMonth == 6 || currentMonth == 4 || currentMonth == 2 || currentMonth == 1){
+        const preM = 31-age.day;
+        const preD = currentDay-0;
+
+        const presentDay = preM + preD;
+        document.getElementById('dispDay').innerHTML = presentDay;
+        return;
+      } else if(currentMonth == 3) {
+        const preM = 29-age.day;
+        const preD = currentDay-0;
+
+        const presentDay = preM + preD;
+        document.getElementById('dispDay').innerHTML = presentDay;
+        return;
+      }
+      
     }
   }
 
