@@ -99,6 +99,7 @@ const Main = () => {
       document.getElementById('dispDay').innerHTML = presentDay;
       return;
     } else{
+      // eslint-disable-next-line
       if(currentMonth == 12 || currentMonth == 10 || currentMonth == 7 || currentMonth == 5){
         const preM = 30-age.day;
         const preD = currentDay-0;
@@ -106,6 +107,7 @@ const Main = () => {
         const presentDay = preM + preD;
         document.getElementById('dispDay').innerHTML = presentDay;
         return;
+        // eslint-disable-next-line
       } else if(currentMonth == 11 || currentMonth == 9 || currentMonth == 8 || currentMonth == 6 || currentMonth == 4 || currentMonth == 2 || currentMonth == 1){
         const preM = 31-age.day;
         const preD = currentDay-0;
@@ -113,6 +115,7 @@ const Main = () => {
         const presentDay = preM + preD;
         document.getElementById('dispDay').innerHTML = presentDay;
         return;
+        // eslint-disable-next-line
       } else if(currentMonth == 3) {
         const preM = 29-age.day;
         const preD = currentDay-0;
@@ -190,6 +193,7 @@ const Main = () => {
 
   // error handler as regards non-existing date of birth
   function handleInvalidNumber(){
+    // eslint-disable-next-line
     if(age.month == 2 && age.day > 29){
       const errMessage = document.getElementById('Day').parentNode;
       const sentMsg = document.getElementById('sentMsg1');
@@ -199,6 +203,7 @@ const Main = () => {
       document.getElementById('dispYear').innerHTML = '--';
       document.getElementById('dispMonth').innerHTML = '--';
       document.getElementById('dispDay').innerHTML = '--';
+      // eslint-disable-next-line
     } else if((age.month == 4 || age.month == 6 || age.month == 9 || age.month == 11) && age.day > 30){
       const errMessage = document.getElementById('Day').parentNode;
       const sentMsg = document.getElementById('sentMsg1');
@@ -208,6 +213,7 @@ const Main = () => {
       document.getElementById('dispYear').innerHTML = '--';
       document.getElementById('dispMonth').innerHTML = '--';
       document.getElementById('dispDay').innerHTML = '--';
+      // eslint-disable-next-line
     } else if((age.month == 1 || age.month == 3 || age.month == 5 || age.month == 7 || age.month == 8 || age.month == 10 || age.month == 12) && age.day > 31){
       const errMessage = document.getElementById('Day').parentNode;
       const sentMsg = document.getElementById('sentMsg1');
